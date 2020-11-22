@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logo2"
+        android:label="Avengers"
+        android:roundIcon="@mipmap/ic_logo2"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:networkSecurityConfig="@xml/network_security_config">
+        <activity android:name=".splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".FindId" android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity android:name=".FindPw" android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity android:name=".login" android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity android:name=".ranking_page" android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity android:name=".sign_up" android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity android:name=".MyOrderDataActivity" android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity android:name=".NewOrderMakeActivity" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="@string/kakao_scheme" android:host="@string/kakaolink_host" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".OrderActivity" android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity android:name=".OrderDataActivity" android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity android:name=".ranking_page_enter" android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity android:name=".test_enter" android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity android:name=".main_page_enter" android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity android:name=".test" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".first_page" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".sign_up_link" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".sign_up_enter" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".main_page" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="@string/kakao_app_key" />
+    </application>
+
+</manifest>

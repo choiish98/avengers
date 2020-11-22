@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:background="#ffffff"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="제목"
+            android:fontFamily="@font/bmdohyeon"
+            android:textSize="15sp"
+            android:textColor="#3797a4"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="분야"
+            android:fontFamily="@font/bmdohyeon"
+            android:textSize="10sp"
+            android:textColor="#3797a4"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="모집 인원"
+            android:fontFamily="@font/bmdohyeon"
+            android:textSize="10sp"
+            android:textColor="#3797a4"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="프로젝트 내용"
+            android:fontFamily="@font/bmdohyeon"
+            android:textSize="10sp"
+            android:textColor="#3797a4"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/announcement_title"
+            android:text="제목"
+            android:fontFamily="@font/bmdohyeon"
+            android:textSize="15sp"
+            android:textColor="#000000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/announcement_tag"
+            android:text="분야"
+            android:fontFamily="@font/bmdohyeon"
+            android:textSize="10sp"
+            android:textColor="#000000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/announcement_recruitment"
+            android:text="모집 인원"
+            android:fontFamily="@font/bmdohyeon"
+            android:textSize="10sp"
+            android:textColor="#000000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/announcement_contents"
+            android:text="프로젝트 내용"
+            android:fontFamily="@font/bmdohyeon"
+            android:textSize="10sp"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:paddingLeft="50dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="삭제"
+            android:fontFamily="@font/bmdohyeon"
+            android:textSize="18sp"
+            android:textColor="#3797a4"
+            android:background="@drawable/rounded_button"
+            android:id="@+id/deleteButton"/>
+    </LinearLayout>
+
+</LinearLayout>

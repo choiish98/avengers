@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="411dp"
+        android:layout_height="60dp"
+        android:background="@drawable/top_navi"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="어셈블러"
+            android:fontFamily="@font/bmdohyeon"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="32sp"
+            android:textColor="#3797a4"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="600dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="10sp"
+            android:layout_weight="1"
+            android:fontFamily="@font/bmdohyeon"
+            android:text="테스트 문제"
+            android:textColor="#3797a4"
+            android:textSize="22sp" />
+
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="230dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/layer_rounded"
+            android:orientation="horizontal">
+
+            <ListView
+                android:id="@+id/test_list_view"
+                android:layout_width="100dp"
+                android:layout_height="match_parent">
+            </ListView>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/question_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </TextView>
+            </FrameLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="10sp"
+            android:layout_weight="1"
+            android:fontFamily="@font/bmdohyeon"
+            android:text="답안 작성"
+            android:textColor="#3797a4"
+            android:textSize="22sp" />
+
+        <LinearLayout
+            android:layout_width="370dp"
+            android:layout_height="250dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:background="@drawable/layer_rounded">
+
+            <EditText
+                android:id="@+id/submit_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3">
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <TextView
+                android:id="@+id/answer_testview"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="#394959"
+                android:text="시도횟수:0  성공횟수:0  "
+                android:fontFamily="@font/bmdohyeon"
+                android:textSize="15sp"
+                android:layout_marginLeft="20dp"/>
+
+            <Button
+                android:id="@+id/submit_button"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right"
+                android:layout_margin="10sp"
+                android:layout_marginLeft="10sp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_button2"
+                android:fontFamily="@font/bmdohyeon"
+                android:text="제출"
+                android:textColor="#e4e4e4"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/bottom_navi"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <ImageButton
+            android:id="@+id/rank_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10sp"
+            android:layout_weight="1"
+            android:background="#fcf876"
+            app:srcCompat="@drawable/ic_insert_chart_black_24dp"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageButton
+            android:id="@+id/home_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="#fcf876"
+            app:srcCompat="@drawable/ic_home_black_24dp"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageButton
+            android:id="@+id/test_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="#fcf876"
+            app:srcCompat="@drawable/ic_assignment_black_24dp"
+            android:layout_marginRight="10sp"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageButton
+            android:id="@+id/order_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10sp"
+            android:layout_weight="1"
+            android:background="#fcf876"
+            app:srcCompat="@drawable/ic_baseline_account_circle_black_24dp"
+            tools:ignore="VectorDrawableCompat" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
